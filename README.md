@@ -17,7 +17,7 @@ In this study, we thus introduce a simple yet more effective method compared to 
 
 ## News
 - (**Soon**) Codes are available.
-- (**Soon**) Supplementary video will be uploaded.
-- (2024.06) Our paper is accepted by **IROS 2024**!
+- (2024.11) Refined UAVDT dataset annotations are available.
+- (2024.06) Our paper is accepted by **IROS 2024** as selected **Oral**!
 
 ## Citation
