@@ -21,3 +21,11 @@ In this study, we thus introduce a simple yet more effective method compared to 
 - (2024.06) Our paper is accepted by **IROS 2024** as selected **Oral**!
 
 ## Citation
+```bibtex
+@article{song2024sftrack,
+  title={SFTrack: A Robust Scale and Motion Adaptive Algorithm for Tracking Small and Fast Moving Objects},
+  author={Song, InPyo and Lee, Jangwon},
+  journal={arXiv preprint arXiv:2410.20079},
+  year={2024}
+}
+```
