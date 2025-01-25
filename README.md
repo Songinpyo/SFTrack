@@ -22,10 +22,12 @@ In this study, we thus introduce a simple yet more effective method compared to 
 
 ## Citation
 ```bibtex
-@article{song2024sftrack,
+@inproceedings{song2024sftrack,
   title={SFTrack: A Robust Scale and Motion Adaptive Algorithm for Tracking Small and Fast Moving Objects},
-  author={Song, InPyo and Lee, Jangwon},
-  journal={arXiv preprint arXiv:2410.20079},
-  year={2024}
+  author={Song, Inpyo and Lee, Jangwon},
+  booktitle={2024 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
+  pages={10870--10877},
+  year={2024},
+  organization={IEEE}
 }
 ```
