@@ -1,3 +1,13 @@
+<div align="center">
+  
+[<img src="https://img.shields.io/badge/📄_Paper-IROS_2024-blue?style=for-the-badge" alt="Paper" height="35">](https://ieeexplore.ieee.org/abstract/document/10802537)
+[<img src="https://img.shields.io/badge/📝_arXiv-2410.20079-red?style=for-the-badge" alt="arXiv" height="35">](https://arxiv.org/abs/2410.20079)
+[<img src="https://img.shields.io/badge/📊_Data-Refined_UAVDT-green?style=for-the-badge" alt="Refined UAVDT" height="35">](https://github.com/Songinpyo/SFTrack/blob/main/UAVDT_Refined_Annotations_SFTrack.zip)
+[<img src="https://img.shields.io/badge/🔬_Lab-i2slab-darkgreen?style=for-the-badge" alt="Lab" height="35">](https://i2slab.skku.edu/)
+
+</div>
+
+
 # SFTrack
 Official Repository of "*SFTrack: A Robust Scale and Motion Adaptive Algorithm for Tracking Small and Fast Moving Objects*" (IROS 2024)
 
