@@ -14,7 +14,7 @@ Official Repository of "**SFTrack: A Robust Scale and Motion Adaptive Algorithm 
 
 ## 📝 Abstract
 
-![Motion-Aware Heatmap Regression](Figures/Front_Image.png)
+![SFTrack](Figures/Front_Image.png)
 
 This paper addresses the problem of multi-object tracking in Unmanned Aerial Vehicle (UAV) footage.
 It plays a critical role in various UAV applications, including traffic monitoring systems and real-time suspect tracking by the police.
@@ -28,10 +28,13 @@ To evaluate the effectiveness of our method, we conducted benchmark evaluations 
 ## 🔑 Key Points
 
 ### ✅ Strength
-- Excellent performance on video with large amounts of tiny objects and hard camera motion
+- Excellent performance on videos with large numbers of tiny objects
+- Robust tracking despite challenging camera motion
+- Successfully handles low-confidence detections in UAV scenarios
 
 ### ⚠️ Weakness
-- Slow inference speed (we use reid, traditional algorithms and treats lots of detections including low confidence detections)
+- Higher computational requirements due to ReID features and traditional algorithms
+- Processes many low-confidence detections, which impacts efficiency
 
 
 ## 🛠️ Installation
@@ -62,32 +65,31 @@ You can find more model variants and weights [here](https://github.com/JDAI-CV/f
 
 
 ## 🎬 Demo
+
+Run the tracker on your own videos:
+
 ```bash
 python3 tools/demo_track.py sftrack -f exps/example/mot/yolox_x_mix_det.py -c pretrained/bytetrack_x_mot17.pth.tar --path ./demo/video.mp4 --fp16 --fuse --save_result
 ```
 
-### 📊 Qualitative Result
-<video src="Figures/SFTrack_Demo.mp4" controls width="100%"></video>
+### 📊 Qualitative Results
+![SFTrack Demo](Figures/SFTrack_Demo.gif)
 
-To see more qualitative results visit our [website](https://songinpyo.github.io/SFTrack-Project/)
+To see more detailed qualitative results, visit our [project website](https://songinpyo.github.io/SFTrack-Project/).
 
 
 ## 🔄 Refined UAVDT Dataset Annotation
-We identified several errors and omissions in UAVDT dataset.
+We identified and corrected numerous errors and omissions in the UAVDT dataset annotations to improve benchmarking quality.
 
 ### Before and After Comparison:
-<div style="display: flex; justify-content: space-between;">
-  <div style="width: 48%;">
-    <p><strong>Original Annotation:</strong></p>
-    <video src="Figures/Original_GT_M1101.mp4" controls width="100%"></video>
-  </div>
-  <div style="width: 48%;">
-    <p><strong>Refined Annotation:</strong></p>
-    <video src="Figures/Refined_GT_M1101.mp4" controls width="100%"></video>
-  </div>
-</div>
 
-To download the refined annotation visit [project page](https://songinpyo.github.io/SFTrack-Project/)
+| Original Annotation | Refined Annotation |
+|:-------------------:|:------------------:|
+| ![Original Annotation](Figures/Original_GT_M1101.gif) | ![Refined Annotation](Figures/Refined_GT_M1101.gif) |
+
+The refined annotations show significant improvements in object tracking consistency and accuracy.
+
+To download our refined annotation dataset, visit the [project page](https://songinpyo.github.io/SFTrack-Project/).
 
 
 ## 📢 News
